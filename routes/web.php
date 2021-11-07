@@ -21,3 +21,4 @@ Route::get('/', function () {
 
 Route::get('/books', [BookController::class, 'index']);
 Route::post('/books/store', [BookController::class, 'store']);
+Route::get('/api/find', [BookController::class, 'apiFind']);

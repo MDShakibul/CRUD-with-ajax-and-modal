@@ -29,4 +29,9 @@ class BookController extends Controller
         Book::create($input);
         return response()->json(['success'=>'Data is successfully added']);
     }
+
+    public function apiFind()
+    {
+        return view('api_find');
+    }
 }
